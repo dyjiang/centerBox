@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .vcontainer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            font-size: 0;
+            white-space: nowrap;
+            overflow: auto;
+        }
+
+        .vcontainer:after {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .dialog {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+            font-size: 14px;
+            white-space: normal;
+            /* 自定义代码 */
+            position: relative;
+            border: 1px solid #000;
+        }
+
+        .vcontainer video {
+            width: 603px;
+            height: 340px;
+        }
+
+        .vcontainer .dialog>a {
+            margin: 0 auto;
+            text-align: center;
+            width: 220px;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            text-decoration: none;
+            background: rgba(0, 136, 234, 1);
+            color: #fff;
+            font-size: 16px;
+            margin-top: 28px;
+        }
+
+        .vcontainer .dialog>img.close {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            right: 0;
+            top: -26px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vcontainer">
+        <div class="dialog">
+             <img src="./image/pengPic63.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
